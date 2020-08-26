@@ -28,7 +28,7 @@ public class LRUCache {
       return;
     }
 
-    if (this.doublyLinkedList.getSize() == 5) {
+    if (this.doublyLinkedList.getSize() == LRU_SIZE) {
       this.doublyLinkedList.removeLast();
     }
 
